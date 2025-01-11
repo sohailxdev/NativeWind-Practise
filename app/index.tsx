@@ -4,12 +4,13 @@ import "../global.css";
 import { SafeAreaView } from "react-native-safe-area-context";
 import Images from "../constants/images";
 import { Image, ScrollView, Text, View } from "react-native";
+import CustomButton from './../components/CustomButton';
 
 export default function Index() {
   return (
     <SafeAreaView className="bg-primary h-full flex-1">
       <ScrollView contentContainerStyle={{height: "100%"}} style={{height: "100%"}}>
-        <View className="px-4 w-full min-h-[90vh] items-center justify-center ">
+        <View className="px-4 w-full  items-center justify-center ">
           <Image
             source={Images.logo}
             className="w-[130px] h-[84px] "
@@ -38,6 +39,9 @@ export default function Index() {
             Where creativity meets innovation: embark on a journey of limitless
             exploration with Aora{" "}
           </Text>
+          
+          <CustomButton
+          containerStyle='w-full mt-7'/>
         </View>
       </ScrollView>
     </SafeAreaView>
